@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "status": "draft_not_for_production",
+  "currency": "BRL",
+  "approved": {
+    "requestExpiryHours": 3,
+    "completionConfirmationHours": 24,
+    "penaltyReviewCount": 3,
+    "penaltyLookbackCalendarMonths": 12,
+    "scheduledFreeCancellationBeforeHours": 24,
+    "scheduledBookingGraceMinutes": 30,
+    "noShowWaitMinutes": 15,
+    "reviewsRequireBoth": true,
+    "travelBufferMinutes": 0,
+    "premiumEnabled": false,
+    "physicalCashEnabled": true
+  },
+  "proposed": {
+    "cancellationPenaltyBps": 1000,
+    "cancellationCapCents": 10000,
+    "noShowPenaltyBps": 2000,
+    "noShowCapCents": 20000,
+    "fundingReservationMinutes": 15,
+    "matchingBatchSize": 10,
+    "matchingBatchIntervalSeconds": 60,
+    "matchingInitialRadiusKm": 5
+  },
+  "undecided": {
+    "platformFeeBps": null,
+    "paymentProvider": null,
+    "payoutFees": null,
+    "payoutMinimumCents": null,
+    "retentionDays": null
+  }
+}
