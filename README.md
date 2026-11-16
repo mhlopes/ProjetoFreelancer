@@ -1,7 +1,7 @@
 # Plataforma de serviços presenciais
 Nome comercial não definido • Português do Brasil.
 
-Este repositório contém a especificação (docs/, specs/, prompts/) **e um protótipo funcional** do marketplace. O protótipo roda localmente com **pagamentos, saques, SMS e verificação de identidade SIMULADOS**: não movimenta dinheiro real, não está pronto para produção e recusa iniciar em `APP_ENV=production`. O estado exato do que existe e do que falta está em `docs/12-status.md`.
+Este repositório contém a especificação (docs/, specs/) **e um protótipo funcional** do marketplace. O protótipo roda localmente com **pagamentos, saques, SMS e verificação de identidade SIMULADOS**: não movimenta dinheiro real, não está pronto para produção e recusa iniciar em `APP_ENV=production`. O estado exato do que existe e do que falta está em `docs/12-status.md`.
 
 ## Executar localmente
 Requisito: Node.js 22 ou mais novo (desenvolvido com Node 26). Não precisa instalar banco de dados nem Docker.
@@ -44,18 +44,7 @@ Nenhuma regra financeira ou permissão vive na interface: páginas e API apenas 
 # Pacote de contexto original
 Versão 1.0 • 15/11/2026. A especificação abaixo foi consolidada da entrevista com o fundador. Não contém credenciais, integrações contratadas ou alegação de conformidade jurídica.
 
-## Como começar
-1. Extraia esta pasta na raiz de um novo repositório.
-2. Abra o repositório no Claude Code. Leia CLAUDE.md e docs/01-produto.md.
-3. Cole prompts/01-iniciar.md. Implemente primeiro a fatia vertical definida no backlog.
-4. Antes de alterar dinheiro, concorrência ou permissões, consulte as regras, os estados e os cenários de aceitação.
-5. Ao trocar de modelo, use prompts/03-handoff.md e atualize docs/12-status.md.
-6. No Claude por navegador, anexe CONTEXTO_COMPLETO.md e o prompt da tarefa. A capacidade de executar código dependerá do ambiente disponível.
-
-Os nomes “Fable 5.2” e “Opus 5.5” são os nomes informados pelo usuário. Este pacote não verifica sua disponibilidade, capacidades ou identificadores de API. Selecione no seu ambiente os modelos efetivamente disponíveis; nenhuma regra depende de um modelo específico.
-
 ## Conteúdo
-- CLAUDE.md: instruções permanentes e invariantes.
 - docs/01-produto.md: visão, perfis e escopo.
 - docs/02-regras.md: regras funcionais numeradas.
 - docs/03-fluxos-estados.md: transições e concorrência.
@@ -71,10 +60,7 @@ Os nomes “Fable 5.2” e “Opus 5.5” são os nomes informados pelo usuário
 - docs/13-fontes.md: referências técnicas.
 - specs/aceitacao.feature: cenários de comportamento para converter em testes.
 - specs/politicas.example.json: parâmetros demonstrativos, não tarifas comerciais finais.
-- prompts/: instruções de início, revisão e passagem de contexto.
 - .env.example e .gitignore: base para configuração segura.
-- CONTEXTO_COMPLETO.md: compilação para anexar a um chat.
-- MANIFEST.sha256: integridade dos arquivos.
 
 ## Convenções
 APROVADO = decisão explícita na entrevista.

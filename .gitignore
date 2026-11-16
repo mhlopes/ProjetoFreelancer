@@ -13,3 +13,20 @@ playwright-report/
 .data/
 *.tsbuildinfo
 next-env.d.ts
+
+# Segredos e credenciais
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+secrets/
+credentials*.json
+
+# Arquivos locais de contexto para assistentes (não versionar)
+CLAUDE.md
+AGENTS.md
+CONTEXTO_COMPLETO.md
+MANIFEST.sha256
+prompts/
+.claude/

@@ -30,7 +30,7 @@ Integrações: nenhuma contratada. Pagamentos, saques, OTP e verificação de id
 
 ### Arquivos
 `db/migrations/0001_schema.sql`, `0002_reference_data.sql`; `db/seeds/demo.ts`; `src/lib/*`; `src/modules/*` (regras); `src/app/*` (páginas, `actions.ts`, `api/v1`, `api/health`); `src/components/*`; `src/instrumentation.ts`; `tests/*`; `scripts/smoke.mjs`, `scripts/db-reset.ts`.
-Alterados do pacote original: `README.md`, `.env.example`, `.gitignore`, `docs/11-decisoes-pendencias.md`, este arquivo. **Não regenerados:** `CONTEXTO_COMPLETO.md` e `MANIFEST.sha256` continuam refletindo o pacote original (os hashes dos arquivos alterados não conferem mais).
+Alterados do pacote original: `README.md`, `.env.example`, `.gitignore`, `docs/11-decisoes-pendencias.md`, este arquivo. Arquivos de contexto para assistentes (`CLAUDE.md`, `AGENTS.md`, `prompts/`, `CONTEXTO_COMPLETO.md`, `MANIFEST.sha256`) ficam apenas locais, fora do Git (`.gitignore`).
 
 ### Decisões novas
 Todas PROPOSTAS técnicas, nenhuma aprovada pelo fundador: T01–T20 e pendências O13–O15 em `docs/11-decisoes-pendencias.md`. As mais relevantes para revisar: T01 (banco embarcado), T06 (duas contas na carteira), T09 (regra de cancelamento do trabalhador), T11 (ausência em urgentes).
@@ -59,7 +59,7 @@ O teste de fumaça usa a API REST e envia formulários do site sem JavaScript (l
 - Sem outbox para integrações externas; notificações são apenas a caixa interna.
 - Reembolso sempre em crédito de carteira (O03); chargeback de cartão não modelado.
 - CPFs dos seeds e testes são sintéticos (dígitos verificadores calculados sobre base sequencial), e-mails em `.invalid`.
-- `next dev` gera `AGENTS.md` na raiz (arquivo do próprio Next.js).
+- `next dev` gera `AGENTS.md` na raiz (arquivo do próprio Next.js); está no `.gitignore`.
 
 ### Migrations/seeds
 Migrations aplicadas automaticamente na subida (`schema_migrations`). Seed fictício só em `APP_ENV=development` e só com a tabela de usuários vazia. `npm run db:reset` apaga `~/.plataforma-servicos/pgdata`.
